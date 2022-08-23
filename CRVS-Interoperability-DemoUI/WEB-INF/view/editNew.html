@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MockUp SP</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../assets/css/edit.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light" style="font-weight: bold;border-bottom: 1px solid #198754;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="padding: 0;">
+            <span style="font-size: 1.2rem;font-weight: bold;margin-left: 0.5rem;">Social Protection Program Search Module</span>
+            <!-- <span style="font-size: 0.6rem;font-weight: bold;margin-left: 0.1rem;">(Ver 1.0)</span> -->
+        </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item"><a class="nav-link home" href="/">Home</a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form>
+            <div class="card">
+                <div class="card-header text-primary clickable">
+                    <h6 class="d-flex justify-content-between align-items-md-center mb-0">
+                        <span>Search Criteria</span><i
+                            class="fa fa-chevron-up panel-expand-collapse"></i></h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <label class="form-label">Search On</label>
+                            <select class="form-select form-select-sm selectpicker select_multiselect"
+                                id="select_multiselect" multiple="" data-style="btn btn-sm btn-selectpicker"
+                                data-live-search="true">
+                                <option value="national_id" >National ID</option>
+                                <option value="brn">Birth/Death Registration Number</option> 
+                                <option value="first_name" selected="">First Name</option>
+                                <option value="last_name" selected="">Last Name</option>
+                                <option value="father_name">Father Name</option>
+                                <option value="mother_name">Mother Name</option>
+                                <option value="contact_no">Contact No.</option>
+                                <option value="date_of_birth">Date of Birth</option>
+                                <option value="date_of_death">Date of Death</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+                            <table class="table">
+
+                                <tbody>
+
+                                    <tr class="rowforsearch" id="national_id_tr">
+                                        <th>National ID</th>
+                                        <td><input placeholder="National ID"  id="national_id_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="rowforsearch" id="brn_tr">
+                                        <th>Birth/Death Registration Number</th>
+                                        <td><input placeholder="Birth/Death Registration Number" id="brn_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+ 
+
+                                    <tr class="rowforsearch" id="first_name_tr">
+                                        <th>First Name</th>
+                                        <td><input placeholder="First Name" id="first_name_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+                                    <tr class="rowforsearch" id="last_name_tr">
+                                        <th>Last Name</th>
+                                        <td><input placeholder="Last Name" id="last_name_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+                                    <tr class="rowforsearch" id="father_name_tr">
+                                        <th>Father Name</th>
+                                        <td><input placeholder="Father Name" id="father_name_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+                                    <tr class="rowforsearch" id="mother_name_tr">
+                                        <th>Mother Name</th>
+                                        <td><input placeholder="Mother Name" id="mother_name_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+                                    <tr class="rowforsearch" id="contact_no_tr">
+                                        <th>Contact no</th>
+                                        <td><input placeholder="Contact no" id="contact_no_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+                                    <tr class="rowforsearch" id="date_of_birth_tr">
+                                        <th>Date of Birth</th>
+                                        <td><input placeholder="Date of Birth" id="date_of_birth_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+                                    </tr>
+                                    <tr class="rowforsearch" id="date_of_death_tr">
+                                        <th>Date of Death</th>
+                                        <td><input placeholder="Date of Death" id="date_of_death_value" class="form-control form-control-sm allfields"
+                                                type="text"></td>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col text-center"><button class="btn btn-primary btn-sm mx-2" id="searchbtn"
+                            type="button">Search</button><button class="btn btn-warning btn-sm mx-2"  id="clearbtn"
+                            type="button">Clear</button></div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 10px;">
+            </div>
+
+            <div class="row" style="margin-bottom: 10px;">
+                <h6><input id="totalrecordsinput" value="0" style="display:none;"><span id="totalrecords">Total Records found : 0</span></h6>
+            </div>
+
+            <div class="row" style="margin-top: 10px; display: none;">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 "><textarea placeholder="Response" rows="6"
+                        class="form-control form-control-sm"></textarea></div>
+            </div>
+
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                               <th>Father Name</th> 
+                               <th>Mother Name</th> 
+                                <th>Contact No</th>
+                                <th>Date of Birth<br>(YYYY-MM-DD)</th>
+                                <th>Date of Death<br>(YYYY-MM-DD)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="searchedRecords">
+                             <tr><td colspan="8" style="text-align: center;">No Records Found</td></tr>
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <div class="container d-none" id="gPageLoader">
+        <div class="row">
+            <div class="col">
+                <div class="animationload">
+                    <div class="osahanloading"></div>
+                    <div id="gPageLoaderMsg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="gAlertModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5></h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm" type="button" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="gConfirmModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4></h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer"><button class="btn btn-outline-secondary btn-sm border rounded-0 border-primary btn-cancel" type="button" data-bs-dismiss="modal">Cancel</button><button class="btn btn-primary btn-sm border rounded-0 btn-confirm" type="button">Confirm</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="changePasswordModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Password</h5><button type="button" class="btn-close btn-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center"><input class="form-control-sm form-control text-center mb-2" type="password" id="changePasswordInput" placeholder="Enter New Password"><span id="changePasswordSpan" class="text-danger"></span></div>
+                <div class="modal-footer"><button class="btn btn-light btn-sm btn-modal-close" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary btn-sm" id="changePasswordSave" type="button">Save</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/moment.min.js"></script>
+    <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/js/header.js"></script>
+    <script src="../../assets/js/edit.js"></script>
+</body>
+
+</html>

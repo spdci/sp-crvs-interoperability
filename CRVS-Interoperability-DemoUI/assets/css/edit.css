@@ -1,0 +1,17 @@
+.form-label {
+  font-weight: 500;
+}
+
+.btn.btn-selectpicker {
+  border: 1px solid #ced4da;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+}
+
+button.dropdown-toggle{
+  min-height: 100px !important;
+ 
+}
+ 
