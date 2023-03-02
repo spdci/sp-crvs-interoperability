@@ -33,7 +33,7 @@ If you are a technology solution provider, these standards and guidelines could 
 
 True convergence needs meaningful collaboration and dialogue among diverse stakeholders.
 
-Therefore, the initiative is centred around different working groups that will define standards and consolidate work done across institutions and countries. 4 working groups are currently active: (i) principles, (ii) process standards, (iii) data standards and (iv) technical standards.
+Therefore, the initiative is centred around different working groups that will define standards and consolidate work done across institutions and countries. 4 working groups are currently active: (i) principles, (ii) process standards, (iii) data standards and (iv) technical/ API standards.
 
 You can participate by:
 - Sharing existing materials.
