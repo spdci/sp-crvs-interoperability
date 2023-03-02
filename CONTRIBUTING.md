@@ -21,6 +21,7 @@ You can participate by:
 - Drafting standards and guidelines
 
 If you have suggestions for future expansions, or think you have found a bug in our code, feel free to **open a new issue** in this repository.
+You can also use the **labels**, e.g. for the respective working groups to make it easier to identify what you and the community is working on and where you would like to contribute.
 We are always happy to engage with our community.
 
 ## How you can get involved:
